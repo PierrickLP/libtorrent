@@ -832,7 +832,7 @@ namespace aux {
 				TORRENT_FAIL_BDECODE(bdecode_errors::depth_exceeded);
 
 			--token_limit;
-			if (token_limit < 0)
+			if (false && token_limit < 0)
 				TORRENT_FAIL_BDECODE(bdecode_errors::limit_exceeded);
 
 			// look for a new token
